@@ -5,46 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aarogya Dental Clinic</title>
   <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="header">
-    <img src="images/aarogya_dental_logo.png" alt="Aarogya Dental Clinic logo" class="logo">
-    <nav class="nav" id="nav">
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
-      <ul class="nav-list">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="about">
-      <h1>Welcome to Aarogya Dental Clinic</h1>
-      <p>Your smile is our priority. We provide comprehensive dental care for all ages.</p>
-    </section>
-    <section id="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Preventive checkups</li>
-        <li>Orthodontics</li>
-        <li>Cosmetic dentistry</li>
-      </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <form id="contactForm">
-        <label for="name">Name</label>
-        <input id="name" type="text" required>
-        <label for="message">Message</label>
-        <textarea id="message" rows="4" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Aarogya Dental Clinic</p>
-  </footer>
-  <script src="script.js"></script>
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <img src="images/aarogya_dental_logo.png" alt="Aarogya Dental Clinic logo" class="logo">
+      <nav class="nav" id="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h1>Welcome to Aarogya Dental Clinic</h1>
+        <p>Your smile is our priority. We provide comprehensive dental care for all ages.</p>
+      </section>
+      <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+          <li>Preventive checkups</li>
+          <li>Orthodontics</li>
+          <li>Cosmetic dentistry</li>
+        </ul>
+      </section>
+      <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <img src="images/IMG_3739.jpeg" alt="Clinic view 1" data-lightbox>
+          <img src="images/IMG_3740.jpeg" alt="Clinic view 2" data-lightbox>
+          <img src="images/IMG_3741.jpeg" alt="Clinic view 3" data-lightbox>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input id="name" type="text" required>
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Aarogya Dental Clinic</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
