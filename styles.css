@@ -1,1 +1,67 @@
-{"status":500,"name":"Error","message":"Input buffer contains unsupported image format"}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #0e74bc;
+  color: #fff;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+@media (max-width: 600px) {
+  .nav-toggle {
+    display: block;
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    background-color: #0e74bc;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 150px;
+  }
+  .nav.open .nav-list {
+    display: flex;
+  }
+}
