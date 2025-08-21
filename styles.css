@@ -4,6 +4,10 @@ body {
   line-height: 1.6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -76,6 +80,40 @@ footer {
   justify-content: space-between;
   padding: 2rem;
   background-color: #eaf7ff;
+}
+
+.gallery-images img {
+  cursor: pointer;
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
 }
 
 /* Gallery grid */

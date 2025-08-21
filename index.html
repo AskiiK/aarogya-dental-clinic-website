@@ -43,9 +43,21 @@
     </section>
     <section id="gallery">
       <h2>Gallery</h2>
-      <div class="gallery-images">
+      <div class="gallery-images gallery-grid">
+        <a href="#img1"><img src="images/IMG_3740.jpeg" alt="Clinic reception"></a>
+        <a href="#img2"><img src="images/IMG_3741.jpeg" alt="Dental equipment"></a>
+        <a href="#img3"><img src="images/IMG_3742.jpeg" alt="Waiting area"></a>
+      </div>
+      <div id="img1" class="lightbox">
+        <a href="#gallery" class="close">&times;</a>
         <img src="images/IMG_3740.jpeg" alt="Clinic reception">
+      </div>
+      <div id="img2" class="lightbox">
+        <a href="#gallery" class="close">&times;</a>
         <img src="images/IMG_3741.jpeg" alt="Dental equipment">
+      </div>
+      <div id="img3" class="lightbox">
+        <a href="#gallery" class="close">&times;</a>
         <img src="images/IMG_3742.jpeg" alt="Waiting area">
       </div>
     </section>
@@ -70,9 +82,11 @@
       </p>
       <form id="contactForm">
         <label for="name">Name</label>
-        <input id="name" type="text" required>
+        <input id="name" type="text" required pattern="[A-Za-z\s]{2,}">
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
         <label for="message">Message</label>
-        <textarea id="message" rows="4" required></textarea>
+        <textarea id="message" rows="4" required minlength="10"></textarea>
         <button type="submit">Send</button>
       </form>
     </section>
